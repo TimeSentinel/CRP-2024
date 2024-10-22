@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 #root {
-    @apply p-8 h-screen justify-center items-center text-center;
-    background-color: #060e10;
+    @apply m-6 h-screen justify-center items-center text-center;
+    background-color: #0a181b;
 }
 
 .header {
