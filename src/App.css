@@ -1,42 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    @apply p-8 h-screen justify-center items-center text-center;
+    background-color: #060e10;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.header {
+    @apply h-1/4 flex flex-row justify-center text-center border-b-2 border-orange-500;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main {
+    @apply block h-4/5 w-full m-auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.footer {
+    @apply block h-1/6 text-center bg-gray-900 text-gray-200 ;
 }
 
-.card {
-  padding: 2em;
+/* ########################### Media Selector ########################### */
+/* ------------ Mobile View ------------ */
+@media (max-width: 767px) {
+
+
 }
 
-.read-the-docs {
-  color: #888;
+/* ------------ End Mobile ------------ */
+
+/* ------------ Tablet View ------------ */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+/* ------------ End Tablet ------------ */
+
+/* ------------ Desktop View ------------ */
+@media (min-width: 992px) {
+
+
 }

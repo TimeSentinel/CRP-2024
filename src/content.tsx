@@ -2,7 +2,7 @@ function MainContent() {
 
     return (
         <>
-            <div>
+            <div className="content">
 
             </div>
         </>
