@@ -10,3 +10,8 @@ function Contact() {
 }
 
 export default Contact;
+
+/*
+    todo: add contact form with quote elemments
+    todo: add functional component to validate form and email results
+ */
