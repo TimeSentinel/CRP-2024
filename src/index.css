@@ -4,7 +4,14 @@
 
 /* #################################### GENERAL ############################################ */
 body {
-    @apply text-white bg-black align-top;
+    @apply text-yellow-50 bg-black align-top;
+}
+.homeContent, .galleryContent, .aboutContent, .contactContent {
+    @apply w-full h-full;
+    background-image: url("../images/bg1-dark-1200x750.png");
+    background-position: center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -29,33 +36,50 @@ p {
     @apply w-1/3 flex flex-row justify-center items-end pb-1;
 }
 
+
 .buttonLeft, .buttonRight {
-    @apply bg-orange-600 border-4 border-blue-300 mx-4 mb-6 rounded-2xl;
-    @apply font-sans text-2xl text-blue-300 font-extrabold;
-    vertical-align: middle;
-    width: 180px;
+    @apply flex items-center justify-center text-center cursor-pointer;
+    @apply bg-black border-2 border-yellow-50 mx-4 rounded-xl;
+    @apply font-sans text-2xl text-yellow-50 font-extrabold;
+    width: 170px;
     height: 45px;
-    flex-shrink: 0;
-}
-
-.buttonLeft {
-    transform: rotate(-12deg);
-}
-
-.buttonRight {
-    transform: rotate(12deg);
 }
 
 .buttonRight:hover, .buttonLeft:hover {
-    @apply bg-orange-500 shadow-xl shadow-amber-900;
+    @apply bg-orange-500 shadow-xl shadow-amber-900 ;
 }
 
+.btn {
+    @apply m-auto cursor-pointer;
+}
+
+.quietBtn {
+    @apply border-gray-950 bg-black text-gray-950;
+}
+
+.quietBtn:hover {
+    @apply bg-gray-900 shadow-none;
+}
+
+
+
+.currentBtn {
+    @apply text-blue-300 border-blue-300 bg-blue-950 cursor-default;
+}
+
+.currentBtn:hover {
+    @apply bg-blue-900 shadow-none;
+}
+
+
 .nav-logo {
-    @apply h-full w-1/5;
+    @apply h-full mx-5;
 }
 
 .logo {
+    min-width: 200px;
     max-width: 100%;
+    min-height: 200px;
     max-height: 100%;
     @apply mx-auto p-2;
 }
@@ -68,15 +92,13 @@ p {
 
 
 /* #################################### Content ############################################ */
-.content {
-    @apply w-full h-full;
-    background-image: url("../images/bg1-dark-1200x750.png");
-    background-position: center;
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-}
+
 
 /* #################################### GALLERY ############################################ */
+.galleryContent {
+
+}
+
 .collection {
     @apply flex flex-wrap items-center justify-center ;
 }
@@ -103,10 +125,14 @@ p {
 
 
 /* #################################### CONTACT ############################################ */
+.contactContent {
 
+}
 
 /* #################################### ABOUT US ############################################ */
+.aboutContent {
 
+}
 
 /* #################################### FOOTER ############################################ */
 .mainFoot {

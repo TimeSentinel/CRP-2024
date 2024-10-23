@@ -8,13 +8,13 @@ function App() {
 
     return (
         <>
-            <div className="header">
+            <div id="header">
                 <Header />
             </div>
-            <div className="main">
+            <div id="main">
                 <MainContent />
             </div>
-            <div className="footer">
+            <div id="footer">
                 <Footer />
             </div>
         </>

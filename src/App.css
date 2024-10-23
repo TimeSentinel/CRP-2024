@@ -7,15 +7,15 @@
     background-color: #0a181b;
 }
 
-.header {
+#header {
     @apply h-1/4 flex flex-row justify-center text-center border-b-2 border-orange-500;
 }
 
-.main {
+#main {
     @apply block h-4/5 w-full m-auto;
 }
 
-.footer {
+#footer {
     @apply block h-1/6 text-center bg-gray-900 text-gray-200 ;
 }
 
