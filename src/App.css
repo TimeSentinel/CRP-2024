@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 #root {
-    @apply m-6 h-screen justify-center items-center text-center;
+    @apply mx-auto pt-6 w-full h-screen justify-center items-center text-center;
+    max-width: 1600px;
     background-color: #0a181b;
 }
 
@@ -21,23 +22,32 @@
 
 /* ########################### Media Selector ########################### */
 /* ------------ Mobile View ------------ */
-@media (max-width: 767px) {
-
+@media (max-width: 660px) {
+    #header {
+        min-height: 120px;
+        max-height: 160px;
+    }
 
 }
 
 /* ------------ End Mobile ------------ */
 
 /* ------------ Tablet View ------------ */
-@media (min-width: 768px) and (max-width: 991px) {
-
+@media (min-width: 661px) and (max-width: 1000px) {
+    #header {
+        min-height: 180px;
+        max-height: 220px;
+    }
 
 }
 
 /* ------------ End Tablet ------------ */
 
 /* ------------ Desktop View ------------ */
-@media (min-width: 992px) {
-
+@media (min-width: 1001px) {
+    #header {
+        min-height: 220px;
+        max-height: 280px;
+    }
 
 }

@@ -1,10 +1,15 @@
 import ClickHome from "./common.tsx";
-import HamMenuShow from "./hamMenu.tsx";
 
-function Header() {
+function Header2() {
 
     return (
         <>
+            <div className="header-container">
+                <div className="nav-logo">
+                </div>
+            </div>
+
+
             <div className="header-container">
                 <div className="nav-left">
                     <div className="buttonLeftContainer">
@@ -20,10 +25,7 @@ function Header() {
                         </div>
                     </div>
                 </div>
-                <div className="nav-logo">
-                </div>
                 <div className="nav-right">
-                    <HamMenuShow />
                     <div className="buttonRightContainer">
                         <div className="buttonRight" id="btnAbout">
                             <div className="btn" onClick={() => ClickHome("about")}>ABOUT
@@ -40,12 +42,11 @@ function Header() {
             </div>
 
 
-
         </>
     )
 }
 
-export default Header;
+export default Header2;
 
 /*
     todo: make mobile menu

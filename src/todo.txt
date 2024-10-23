@@ -1,0 +1,13 @@
+/*
+    todo: redo background image...tighten up. fix blueish color.
+    todo: responsive variations
+    todo: blog/news feed: perhaps some videos of builds?
+    todo: photo gallery (tools/machines, products, people)
+    todo: a landing page
+    todo: links to social media
+    todo: maybe a 'how to...' section (could be on using software, designing, setting up machine, operating machine, difficult parts, tooling, etc.)
+    todo: instagram or post feed?s
+    todo: new favicon
+    todo: small logo version for mobile
+    todo: research: Stumptown CNC(responsiveness, menu, logo), digitalcraftpdx.com(home content, mobile menu), naimormetalfabrication.com(quote)
+ */
