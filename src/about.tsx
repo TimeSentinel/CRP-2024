@@ -1,3 +1,5 @@
+import BtnQuote from "./btnQuote.tsx";
+
 function About() {
 // about page content
     return (
@@ -8,6 +10,9 @@ function About() {
 
                     We do stuff.
                 </p>
+                <br/>
+                <br/>
+                <BtnQuote />
             </div>
         </>
     )

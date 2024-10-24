@@ -1,3 +1,4 @@
+import BtnQuote from "./btnQuote.tsx";
 
 function Footer() {
 
@@ -12,7 +13,7 @@ function Footer() {
                     <p>&copy;2024 CNC Router Pros. All Rights Reserved</p>
                 </div>
                 <div className="rightFoot">
-
+                    <BtnQuote />
                 </div>
             </div>
         </>

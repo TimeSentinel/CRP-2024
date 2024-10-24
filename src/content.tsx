@@ -13,6 +13,7 @@ function MainContent() {
                     Our experts can work with various materials and tooling. <br/><br/>
                     Contact us now for a free quote!
                 </p>
+                <br/><br/>
                 <BtnQuote />
             </div>
         </>

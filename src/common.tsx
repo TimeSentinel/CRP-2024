@@ -1,6 +1,6 @@
 import About from './about';
-import {createRoot} from "react-dom/client";
-import {StrictMode} from "react";
+// import {createRoot} from "react-dom/client";
+// import {StrictMode} from "react";
 import MainContent from "./content.tsx";
 // import Gallery from "./gallery";
 import Contact from "./contact.tsx";
@@ -47,13 +47,15 @@ function ClickHome(data: string) {
         default:
             codePlay = <MainContent/>
     }
-    console.log(codePlay);
+
     return (
-        createRoot(document.getElementById('main')!).render(
-            <StrictMode>
+        // createRoot(document.getElementById('main')!).render(
+        //     <StrictMode>
+        <div>
                 {codePlay}
-            </StrictMode>,
-        )
+        </div>
+        //    </StrictMode>,
+        //)
     )
 }
 

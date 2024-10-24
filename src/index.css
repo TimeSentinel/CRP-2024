@@ -31,8 +31,9 @@ p {
 /* #################################### HEADER ############################################ */
 
 .header-container {
-    @apply flex justify-center bg-black w-full h-full text-center;
+    @apply flex bg-black w-full h-full text-center;
 }
+
 
 .nav-left, .nav-right {
     @apply flex flex-row justify-center items-end;
@@ -72,7 +73,6 @@ p {
 }
 
 .nav-logo {
-    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -86,11 +86,11 @@ p {
 
 
 .hamburger-menu {
-    @apply w-12 h-12 bg-black mb-10 cursor-pointer;
+    @apply w-10 h-10 bg-black mb-10 cursor-pointer;
 }
 
 .hamburger-bar {
-    @apply w-full h-2 my-3 bg-amber-100
+    @apply w-full h-2 my-2 bg-amber-100
 }
 
 .hamMenuContainer {
@@ -178,6 +178,10 @@ p {
     @apply w-1/5;
 }
 
+.rightFoot .btnQuote {
+    transform: scale(.75);
+}
+
 .centerFoot {
     @apply w-2/5;
 }
@@ -189,17 +193,25 @@ p {
 /* ########################### Media Selector ########################### */
 /* ------------ Mobile View ------------ */
 @media (max-width: 660px) {
+    .header-container {
+        @apply left-0 flex-row;
+    }
+
+    .nav-left {
+        @apply w-5;
+    }
+    .nav-right {
+        @apply w-full pb-1;
+    }
+
     .nav-logo {
-        @apply w-full h-full float-left pb-0 mb-0;
+        background-position:left;
+        @apply w-full h-full pb-0 mb-0;
         min-width: 140px;
         max-width: 200px;
         min-height: 80px;
         max-height: 150px;
         background-image: url("./../images/mobileLogo.png");
-    }
-
-    .nav-left, .nav-right {
-        @apply w-1/5 pb-1;
     }
 
     .buttonLeft, .buttonRight {
@@ -211,6 +223,10 @@ p {
 
 /* ------------ Tablet View ------------ */
 @media (min-width: 661px) and (max-width: 1000px) {
+    .header-container {
+        @apply justify-center ;
+    }
+
     .hamburger-menu {
         @apply hidden;
     }
@@ -224,6 +240,7 @@ p {
     }
 
     .nav-logo {
+        background-position: left;
         @apply w-full h-full float-left pb-0 mb-0;
         min-width: 140px;
         max-width: 200px;
@@ -243,6 +260,10 @@ p {
 
 /* ------------ Desktop View ------------ */
 @media (min-width: 1001px) {
+    .header-container {
+        @apply justify-center ;
+    }
+
     .hamburger-menu {
         @apply hidden;
     }
@@ -252,6 +273,7 @@ p {
     }
 
     .nav-logo {
+        background-position: center;
         @apply w-full h-full mx-auto pb-0 mb-0;
         min-width: 200px;
         max-width: 250px;
